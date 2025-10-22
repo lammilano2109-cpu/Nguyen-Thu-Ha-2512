@@ -1,20 +1,35 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   text-align: center;
-  background-color: #fff0f5;
-  margin-top: 100px;
+  background: linear-gradient(135deg, #ffe6ea, #ffe6cc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-h1 {
-  color: #d63384;
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
 }
 
 button {
-  background-color: #ff69b4;
+  margin-top: 10px;
+  padding: 10px 20px;
   border: none;
-  padding: 8px 16px;
-  border-radius: 10px;
+  background-color: #ff69b4;
   color: white;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
 }
@@ -23,8 +38,15 @@ button:hover {
   background-color: #ff85c1;
 }
 
-input {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.hidden {
+  display: none;
+}
+
+#birthday {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
