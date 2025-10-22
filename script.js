@@ -1,9 +1,12 @@
 function checkPass() {
-  const pass = document.getElementById("pass").value;
-  if (pass === "2512") {
-    document.getElementById("password-box").style.display = "none";
-    document.getElementById("birthday-box").style.display = "block";
+  const input = document.getElementById("passInput").value.trim();
+  const msg = document.getElementById("msg");
+
+  if (input === "2512") {
+    document.getElementById("login").classList.add("hidden");
+    document.getElementById("birthday").classList.remove("hidden");
   } else {
-    alert("Sai rồi nha 😜 Thử lại đi người đẹp 💖");
+    msg.textContent = "Sai rồi nha 😝";
+    msg.style.color = "red";
   }
 }
