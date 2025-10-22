@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Chúc mừng sinh nhật 💖</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Nhập pass đi người đẹp 💖</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="password-box">
-        <h1>Nhập pass đi người đẹp 💞</h1>
-        <input type="password" id="pass" placeholder="••••">
-        <button onclick="checkPass()">Xác nhận</button>
-    </div>
+  <div class="container" id="login">
+    <h2>Nhập pass đi người đẹp 💕</h2>
+    <input type="password" id="passInput" placeholder="Nhập mật khẩu...">
+    <button onclick="checkPass()">Xác nhận</button>
+    <p id="msg"></p>
+  </div>
 
-    <div id="birthday-box" style="display:none;">
-        <h1>🎉 Chúc mừng sinh nhật Anh yêu 🎂</h1>
-        <p>Chúc Anh luôn vui vẻ, mạnh khỏe và hạnh phúc nha 💗</p>
-    </div>
+  <div class="hidden" id="birthday">
+    <h1>🎉 Chúc mừng sinh nhật Em 🎂</h1>
+    <p>Chúc Em luôn tươi tắn, xinh đẹp và hạnh phúc như bây giờ nha 💗</p>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
