@@ -1,15 +1,15 @@
-function checkPassword() {
-  const pass = document.getElementById("password").value;
+function checkPass() {
+  const passInput = document.getElementById("passInput").value;
   const message = document.getElementById("message");
+  const content = document.getElementById("content");
 
-  if (pass === "2512") {
-    message.innerHTML = "💖 Chúc mừng! Anh đã mở được điều bí mật 💖";
-    message.style.color = "#ff5a79";
-    setTimeout(() => {
-      window.location.href = "https://www.youtube.com/watch?v=5qap5aO4i9A"; // Link bí mật
-    }, 2000);
+  const password = "2512"; // 👉 Pass Anh có thể đổi ở đây nha
+
+  if (passInput === password) {
+    document.querySelector(".container").style.display = "none";
+    content.classList.remove("hidden");
   } else {
-    message.innerHTML = "❌ Sai mật khẩu rồi nha, nhập lại đi 💋";
+    message.textContent = "Sai rồi nè 😝";
     message.style.color = "red";
   }
 }
